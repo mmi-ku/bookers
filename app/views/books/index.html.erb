@@ -10,7 +10,11 @@
 
 
 <span>
-  <%= link_to book.title, book_path(book.id) %>
+  <!--<%= link_to book.title, book_path(book.id) %>-->
+  
+  <%= link_to "show", book_path(book.id) %>
+  <%= link_to "edit", edit_book_path(book.id) %>
+  <%= link_to "Destroy", book_path(book.id) %>
 </span>
 
 <% end %>
